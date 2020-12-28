@@ -12,7 +12,7 @@ namespace InBar
         public App()
         {
             InitializeComponent();
-
+            DBConnection.Connect();
             DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
